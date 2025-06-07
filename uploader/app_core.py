@@ -18,7 +18,6 @@ from .ui_components import (
     render_file_upload, render_image_preview, render_process_button,
     render_results_tabs, render_upload_button, show_success_message,
     show_upload_progress, initialize_session_state, reset_session_state,
-    render_privacy_policy_sidebar
 )
 
 class AppWorkflow:
@@ -184,7 +183,6 @@ class AppWorkflow:
         render_header()
         # Render sidebar and get config
         config = render_sidebar_config()
-        render_privacy_policy_sidebar()
         
         # Main content layout
         col1, col2 = st.columns([1, 2], gap="large")

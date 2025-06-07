@@ -339,21 +339,3 @@ def reset_session_state():
     st.session_state.processed_data = None
     st.session_state.processing_complete = False
     st.session_state.data_edited = False
-
-def render_privacy_policy_sidebar():
-    """
-    Render the privacy policy section in the sidebar.
-    """
-    with st.sidebar:
-        st.markdown("---")
-        st.markdown("**Privacy Policy**")
-        st.markdown("""
-        <small>
-        <strong>Effective Date:</strong> June 7, 2025<br><br>
-        This application is developed and used solely by its creator for personal use. No third-party users shall interact with this application.<br><br>
-        <strong>Data Collection:</strong> No personal data is collected, stored, or shared. The app interacts with the Pinterest API for private and authorized access only.<br><br>
-        <strong>Third-Party Services:</strong> The application may communicate with Pinterest APIs. Any data access is authorized via my personal Pinterest developer account and is not shared with others.<br><br>
-        <strong>Data Sharing:</strong> No information is shared with any third parties. All data stays private and is used only to support the intended functionality for the developer.<br><br>
-        <strong>Contact Developer:</strong> <a href='mailto:alanandrew883@gmail.com'>Email</a>
-        </small>
-        """, unsafe_allow_html=True)
